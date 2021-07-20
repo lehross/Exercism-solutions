@@ -6,7 +6,4 @@ def convert(number):
         if number % fact == 0:
             result.append(factors[fact])
 
-    if result:
-        return(''.join(result))
-    else:
-        return(str(number))
+    return(''.join(result)) if result else (str(number))
